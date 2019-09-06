@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/main/main"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

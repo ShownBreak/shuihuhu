@@ -1,0 +1,216 @@
+/* pages/main/main.wxss */
+page{
+    width: 100%;
+    height: 100%;
+  }
+  .test-bg{
+    width: 100%;
+    height: 100%;
+  }
+
+.myCanvas{
+  background-color: transparent;
+  width: 90px;
+  height:400px;
+}
+
+.v-canvas{
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    width: 90px;
+    background-color: transparent;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.mb {
+  margin-top:100px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.swiper-title {
+  color: #fff;
+  font-size: 28px;
+  position: absolute;
+  top:250px;
+  left: 40rpx;
+  right: 40rpx;
+  /* background-color: rgba(26, 26, 26, 0.411); */
+  text-align: center;
+}
+.swiper-title-1 {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top:300px;
+  left: 40rpx;
+  right: 40rpx;
+  /* background-color: rgba(26, 26, 26, 0.411); */
+  text-align: center;
+}
+.swiper-title-2 {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top:350px;
+  left: 40rpx;
+  right: 40rpx;
+  /* background-color: rgba(26, 26, 26, 0); */
+  text-align: center;
+}
+.swiper-title-3 {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top:400px;
+  left: 40rpx;
+  right: 40rpx;
+  /* background-color: rgba(26, 26, 26, 0.411); */
+  text-align: center;
+}
+.bottom1{
+  position: absolute;
+  bottom:50rpx;
+  left: 130rpx;
+  /* background-color: rgba(26, 26, 26, 0.411); */
+  text-align: center;
+}
+.bottom2{
+  position: absolute;
+  bottom:50rpx;
+  left: 325rpx;
+  /* background-color: rgba(26, 26, 26, 0.411); */
+  text-align: center;
+}
+.bottom3{
+  position: absolute;
+  bottom:50rpx;
+  right:130rpx;
+  /* background-color: rgba(26, 26, 26, 0.411); */
+  text-align: center;
+}
+.bottom4{
+  position: absolute;
+  bottom:350rpx;
+  left:-200rpx;
+  /* background-color: rgba(26, 26, 26, 0.411); */
+  text-align: center;
+}
+.bottom-bg{
+  width:100%;
+  height:200rpx;
+  position: absolute;
+  bottom:0rpx;
+  background-color: rgba(10, 10, 10, 0.418);
+  text-align: center;
+}
+/* 隐藏滚动条 */
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.bottom1 image{
+  width:100rpx;
+  height:100rpx;
+}
+.bottom2 image{
+  width:100rpx;
+  height:100rpx;
+}
+.bottom3 image{
+  width:100rpx;
+  height:100rpx;
+}
+.bottom4 image{
+  width:318rpx;
+  height:100rpx;
+}
+.share-button{
+  opacity: 0; 
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top:0;
+  left: 0;
+
+}
+.page-body{
+  position: absolute;
+  top:450rpx;
+  right:10rpx;
+  left:10rpx;
+  /* background-color: rgba(26, 26, 26, 0.411); */
+  text-align: center;
+}
+.user-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 160rpx;
+  border-radius: 50%;
+}
+
+.user-name, .moto ,.slogn{
+  color: #fff;
+  font-weight: bold;
+}
+
+.user-name {
+  font-size: 42rpx;
+  margin-top: 400rpx;
+}
+.slogn {
+  font-size: 42rpx;
+  margin-top: 50rpx;
+  font-weight: bold;
+}
+
+.moto {
+  margin-top: 200rpx;
+  border: 1rpx solid #fff;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5rpx;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  background-color: transparent;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #87888885
+}
+.copyright{
+  position: absolute;
+  text-align: center;
+  bottom: 50rpx;
+  color:#fff;
+  font-size:13px;
+}
+.stop{
+  width:100px;
+  height:100px;
+}
+
+.scrollview{
+   position: fixed;
+   bottom:200rpx;
+   white-space:nowrap;
+   transition:width 2s;
+}
+.scrollview-after{
+  width:100%；
+}

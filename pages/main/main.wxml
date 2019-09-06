@@ -1,0 +1,40 @@
+  
+   <swiper  current="{{currentTab}}" class="test-bg container"  bindchange='onSlideChangeEnd'>
+        <swiper-item wx:for="{{swiperData}}" wx:for-item="swiperItem" wx:key="">
+          <image data-swiperid="{{swiperItem.Id}}" src="{{swiperItem.bg}}"  class="bg-img" mode="aspectFill"></image>
+          <view wx:if="{{isplay}}"  class="mb" bindtap='stop'>
+            <image src="/images/start.png" class="stop" mode="aspectFit"></image>
+          </view>
+          <view wx:else class="mb"  bindtap='play'>
+            <image src="/images/stop.png" class="stop" mode="aspectFit"></image>
+          </view>
+          <text  class="swiper-title">{{swiperItem.title}}  </text>
+          <text  class="swiper-title-1">{{swiperItem.t1}}  </text>
+          <text  class="swiper-title-2">{{swiperItem.t2}}  </text>
+          <text  class="swiper-title-3">{{swiperItem.t3}}  </text>
+<view class="bottom-bg"></view>
+           <view class="bottom1" data-id1="{{swiperItem.Id}}">
+            <image  src="/images/forwarding.png"  mode="aspectFit"></image>
+            <button class="share-button" open-type="share"></button>
+          </view>
+          <view class="bottom3" data-id="{{swiperItem.Id}}"  bindtap='like'>
+            <image  wx:if="{{!swiperItem.islike}}" src="/images/like.png"  mode="aspectFit"></image>
+            <image wx:else src="/images/like-on.png"  mode="aspectFit"></image>
+          </view>
+          <view class="bottom2" bindtap="showMusicList">
+            <image  src="/images/musiclist.png"  mode="aspectFit" ></image>
+          </view>
+          <!-- <view  class="bottom4" bindtap="gotodream">
+            <image  src="/images/dream.png"  mode="aspectFit" ></image>
+          </view> -->
+        </swiper-item>
+       
+   </swiper>
+ 
+<scroll-view scroll-x="true" class="scrollview"  style="display:{{show}};">
+ <block wx:for="{{swiperData}}" wx:for-item="swiperItem" wx:key="{{index}}">
+    <view style="background: rgba(10, 10, 10, 0.418); width: 190rpx; height: 100rpx; display: inline-block" >
+      <image data-index="{{index}}" src="{{swiperItem.bg}}"  style="width:150rpx;height:100rpx" mode="aspectFill"  bindtap='swichNav'></image>
+    </view>
+ </block>
+</scroll-view>
